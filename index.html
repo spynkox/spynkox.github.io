@@ -1,43 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SPYNKO'S PLACE</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="icon" type="image/png" href="img/logo.png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    
+    <title>Here's Spynko</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
-
 <body>
-    <nav class="navbar">
-        <div class="logo">
-            <img src="img/logo.png" alt="Logo">
+
+    <header class="header">
+        <a href="#home" class="logo">Spynko</a>
+
+        <i class='bx bx-menu' id="menu-icon"></i>
+
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#credits">Credits</a>
+        </nav>
+    </header>
+
+    <section class="home" id="home">
+
+        <div class="home-img">
+            <img src="img/avatar.png" alt="">
         </div>
-        <ul class="nav-links">
-            <li><a href="#" class="current">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Credits</a></li>
+
+        <div class="home-content">
+            <h1>It's <span>Spynko</span></h1>
+            <h3 class="text-animation">
+                I'm a <span></span>
+            </h3>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos est animi eum et expedita temporibus dicta
+                voluptas sunt vitae, voluptatibus obcaecati molestiae magni harum! Temporibus illo distinctio deleniti adipisci!
+                Maxime.</p>
+
+            <div class="social-icons">
+                <a href="#"><i class='bx bxl-instagram-alt'></i></a>
+                <a href="#"><i class='bx bxl-youtube'></i></a>
+                <a href="#"><i class='bx bxl-github'></i></a>
+            </div>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="about-content">
+            <h2 class="heading">About <span>Me</span></h2>
+            <h3 class="text-animation">
+                <span></span>
+            </h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos est animi eum et expedita temporibus dicta
+                voluptas sunt vitae, voluptatibus obcaecati molestiae magni harum! Temporibus illo distinctio deleniti adipisci!
+                Maxime.</p>
+            <a href="#" class="btn">Read More</a>
+        </div>
+        <div class="about-img">
+            <img src="img/avatar.png" alt="">
+        </div>
+    </section>
+
+    <section class="credits" id="credits">
+        <div class="credits-content">
+            <h2 class="heading">Credits</h2>
+            <p>Site design by <span><a href="https://www.youtube.com/@HowtoWebDev">@HowtoWebDev</a></span></p>
+        </div>
+    </section>
+    
+    <footer class="footer">
+        <div class="social">
+            <a href="#"><i class='bx bxl-instagram-alt'></i></a>
+            <a href="#"><i class='bx bxl-youtube'></i></a>
+            <a href="#"><i class='bx bxl-github'></i></a>
+        </div>
+
+        <ul class="list">
+            <li>
+                <a href="#">FAQ</a>
+            </li>
+
+            <li>
+                <a href="#">About Me</a>
+            </li>
+
+            <li>
+                <a href="#">Contact</a>
+            </li>
+
+            <li>
+                <a href="#">Privacy Policy</a>
+            </li>
         </ul>
-    </nav>
+        <p class="copyright">
+            &copy; Spynko | All Rights Reserved
+        </p>
 
-    <div class="portfolio">
-        <h1>I'm <b id="spynko">SPYNKO</b></h1>
-        Student and aspirant developer
-    </div>
-    <br><br>
-    <h2 class="divider line glow" contenteditable>MY SKILLS</h2>
-    <div class="skill-container">
-        <button class="skills"><img src="img/c++.png"><br>C / C++</button>
-        <button class="skills"><img src="img/python.png"><br>Python</button>
-        <button class="skills"><img src="img/java.png"><br>Java</button>
-        <button class="skills"><img src="img/html-css.png"><br>HTML & CSS</button>
-    </div>
-    <br><br>
-    <p class="footer">&copy; 2024 Spynko's Cave. All rights reserved.</p>
+    <script src="javascript\script.js"></script>
 </body>
-
 </html>
