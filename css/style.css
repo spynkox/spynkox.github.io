@@ -439,12 +439,13 @@ span{
     .about{
         flex-direction: column-reverse;
     }
+    .about h2{
+        font-size: 7rem;
+    }
     .about-content{
         margin: 0 2rem 4rem;
     }
     .about img{
-        width: 52vw;
-        margin-top: 1rem;
-        margin-bottom: 3rem;
+        display: none;
     }
 }
